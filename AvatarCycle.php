@@ -13,7 +13,7 @@ require_once "twitter.class.php";
 $twitter = new Twitter($auth["consumer_key"], $auth["consumer_secret"], $auth["user_token"], $auth["user_secret"]);
 
 // Absolute path to avatar folder
-$dir    = '/home/user/TwittAvatars';
+$dir    = 'C:\Users\Antonio\Twitter Avatars';
 $avatarList = array_diff(scandir($dir), array('..', '.'));
 
 $select = array_rand($avatarList);
